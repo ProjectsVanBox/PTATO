@@ -13,11 +13,10 @@ library(ref_genome, character.only = TRUE)
 Input_dir <- "/path/to/MendeleyData/directory/"
 Scripts_dir <-  "/path/to/GithubScripts/directory/"
 Output_dir<-  "/path/to/output/directory/"
-Resources_dir <- "/path/to/MendeleyData/directory/Resources/
-"
+Resources_dir <- "/path/to/MendeleyData/directory/Resources/"
+
 if(dir.exists(Output_dir) == F) { dir.create(Output_dir)}
 source(paste(Scripts_dir, "GeneralFunctions.R", sep = ""))
-
 
 ### Functions
 get_sample_names = function(vcf_fnames, 
