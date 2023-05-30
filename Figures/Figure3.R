@@ -25,7 +25,7 @@ source(paste(Scripts_dir, "GeneralFunctions.R", sep = ""))
 Metadata <- read.delim(paste(Input_dir, "Table_S1.txt", sep = ""))
 Metadata_FA <- Metadata[Metadata$Phenotype == "FanconiAnemia" | Metadata$Individual == "IBFM35",]
 Metadata_FA <- Metadata_FA[Metadata_FA$Germline == FALSE,]
-Metadata_Ageline <- Metadata[Metadata$Phenotype == "Healthy" & Metadata$Training == "No" & Metadata$Type == "Clone" & Metadata$Tissue == "BoneMarrow",]
+Metadata[Metadata$Phenotype == "Healthy" & Metadata$Training == "No" & Metadata$Type == "Clone" & Metadata$Individual != "PMCCB15" & Metadata$Individual != "STE0072",]
 Metadata_Fig3 <- rbind(Metadata_FA,Metadata_Ageline)
 
 ### Read the PTATO vcfs

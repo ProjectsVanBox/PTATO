@@ -14,9 +14,9 @@ library(rstatix)
 options(scipen = 999)
 
 input_dir <- "/path/to/MendeleyData/directory/"
-output_dir_fig5 <- "/path/to/output/dirictory/"
+output_dir_fig5 <- "/path/to/output/directory/"
 if(dir.exists(output_dir_fig5) == F){dir.create(output_dir_fig5)}
-output_dir_figS10 <- "/path/to/output/dirictory/"
+output_dir_figS10 <- "/path/to/output/directory/"
 if(dir.exists(output_dir_figS10) == F){dir.create(output_dir_figS10)}
 
 
