@@ -1,4 +1,8 @@
 # PTATO
+
+[![DOI](https://zenodo.org/badge/485723666.svg)](https://zenodo.org/badge/latestdoi/485723666)
+
+
 **Comprehensive single-cell genome analysis at nucleotide resolution using the PTA Analysis Toolbox**
 
 This repository contains the code to reproduce the figures in the PTATO manuscript.
